@@ -21,4 +21,3 @@ typeof 1 == 'number' // true
 typeof '1' == 'number' // false
 ```
 ![](https://cdn-images-1.medium.com/max/800/1*3X6EiKc-njoRpCB1AWnv3Q.png)
-![](./bis.png)

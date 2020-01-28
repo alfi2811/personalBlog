@@ -1,6 +1,7 @@
 <template>
   <Layout>    
     <div class="post-list">      
+      <h1 style="color: white;">List Blog</h1>
       <div v-for="post in $page.posts.edges" v-bind:key="post">  
         <b-card class="bg-card">
         <div class="row no-gutters" >
@@ -38,7 +39,7 @@
 
 <page-query>
 query Posts ($page: Int) {
-  posts: allPost (perPage: 2, page: $page) @paginate {
+  posts: allPost (perPage: 3, page: $page) @paginate {
     totalCount
     pageInfo {
       totalPages
