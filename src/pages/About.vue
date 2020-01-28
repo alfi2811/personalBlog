@@ -1,6 +1,6 @@
 <template>
   <Layout>    
-    <div style="width: 55%" class="about mx-auto">
+    <div style="width: 55%" class="about mx-auto mt-5">
       <div class="about-photo">      
           <g-image src="../assets/images/profil.png"  class="about-img mx-auto" />            
         

@@ -17,5 +17,11 @@ module.exports = {
         typeName: "Post"
       }
     }
-  ]
+  ],
+  icon: {    
+    favicon: {
+      src: './src/assets/images/favicon.png', 
+      sizes: [16, 32, 96]
+    },  
+  }
 }

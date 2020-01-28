@@ -1,7 +1,7 @@
 <template>
   <Layout>    
     <div class="post-list">      
-      <h1 style="color: white;">List Blog</h1>
+      <p style="color: white; font-size: 30px;">List Blog</p>
       <div v-for="post in $page.posts.edges" v-bind:key="post">  
         <b-card class="bg-card">
         <div class="row no-gutters" >
