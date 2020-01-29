@@ -4,18 +4,17 @@
       <p style="color: white; font-size: 30px;">List Blog</p>
       <div v-for="post in $page.posts.edges" v-bind:key="post">  
         <b-card class="bg-card">
-        <div class="row no-gutters" >
-          <div class="col-4">
-            <g-image :src="post.node.image"  alt="ha" fit="contain" />             
+          <div class="row no-gutters" >
+            <div class="col-md-4 col-sm">
+              <g-image :src="post.node.image" class="img-blog" alt="ha" fit="contain" />             
+            </div>
+            <div class="col-md-8 col-sm-12 pl-1 text">
+              <b-card-text  v-html="post.node.date" class="mb-0"></b-card-text>
+              <b-card-title  v-html="post.node.title" >              
+              </b-card-title>            
+              <g-link :to="post.node.path" class="read">Read More...</g-link>                        
+            </div>
           </div>
-          <div class="col-8 pl-1 text">
-            <b-card-text  v-html="post.node.date" style="font-size: 14px" class="mb-0"></b-card-text>
-            <b-card-title  v-html="post.node.title" >              
-            </b-card-title>
-            
-            <g-link :to="post.node.path" class="read">Read More...</g-link>                        
-          </div>
-        </div>
         </b-card>
         <br>
 
@@ -77,6 +76,9 @@ export default {
  .text{
    padding-top: 0.5rem
  }
+ .text p {
+   font-size: 14px;
+ }
 
  .bg-card {
    background-color: white;
@@ -102,5 +104,20 @@ export default {
       transform: translateY(0px);
 
     }
+  }
+  @media screen and (max-width: 769px) {
+    .g-image--loaded {
+      display: none;
+    }
+    .text p {    
+      font-size: 12px;
+    }
+    .text h4 {
+      font-size: 1.3rem;
+    }
+    .read {
+      font-size: 15px;
+    }
+
   }
 </style>
