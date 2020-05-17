@@ -25,7 +25,7 @@ query {
 
 <style>
 body {
-  background-image: url("../assets/images/bg.png");
+  background-image: url("../assets/images/bg.jpg");
   background-size: 100% 100%; 
   background-attachment: fixed;    
   font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
