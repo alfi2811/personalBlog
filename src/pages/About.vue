@@ -2,7 +2,7 @@
   <Layout>    
     <div style="width: 55%" class="about mx-auto mt-5">
       <div class="about-photo">      
-          <g-image src="../assets/images/profil.png"  class="about-img mx-auto" />            
+          <g-image src="../../static/images/profil.png"  class="about-img mx-auto" />            
         
         <!-- <b-img v-bind="mainProps" rounded="circle" alt="Circle image"></b-img> -->
       </div>
